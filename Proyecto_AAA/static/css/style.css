@@ -2,8 +2,8 @@
 
 :root {
     --font-family: 'Roboto', sans-serif;
-    --gris-letra: #6e6e6e;
-    --gris-simbolo: #c2c2c2;
+    --gris-letra: #1b1b1b;
+    --gris-simbolo: #3a3a3a;
 }
 
 * {
@@ -301,7 +301,7 @@ h1{
     position: absolute;
     top: -15px;
     right: -10px;
-    background-color: red;
+    background-color: #860000;
     color: white;
     padding: 2px 5px;
     border-radius: 50%;
@@ -599,7 +599,7 @@ h1{
 }
 
 .subtitulo-top-stories{
-    color: aquamarine;
+    color: #004730;
 }
 
 .fecha-top-stories{
@@ -617,7 +617,7 @@ h1{
 }
 
 .testimonials{
-    border: 5px solid aquamarine;
+    border: 5px solid #004730;
 }
 
 footer{
