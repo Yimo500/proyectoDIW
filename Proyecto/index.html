@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/style.css">
+    <style>
+        .ir-arriba {
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: right;
+
+            z-index: 12;
+        }
+        .ir-arriba a {
+            text-decoration: none;
+            color: black;
+        }
+        .ir-arriba a img {
+            width: 20px;
+            height: 20px;
+        }
+        .no-mostrar {
+            display: none;
+        }
+        .valora-estrella {
+            transform: scale(0.5);
+        }
+
+        /* Con el JavaSript */
+        .articulos-popular-items li {
+            display: none; 
+        }
+      
+        .articulos-popular-items .footwear-item,
+        .articulos-popular-items .enlace-accesory-pick {
+            display: list-item;
+        }
+    </style>
+    <title>28_ekommart5_XinleiQiu</title>
+</head>
+<body>
+    <header id="header-id">
+        <div class="primera-linea-header">
+            <section class="idiomas-sec">
+                <h2 style="display: none;">idiomas</h2>
+                <ul class="idiomas-ul">
+                    <li>
+                        <a href="#">english</a>
+                        <ul>
+                            <li><a href="#">简体中文</a></li>
+                            <li><a href="#">español</a></li>
+                            <li><a href="#">Français</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="moneda-sec">
+                <h2 style="display: none;">moneda</h2>
+                <ul class="moneda-ul">
+                    <li>
+                        <a href="#">Currency</a>
+                        <ul>
+                            <li><a href="#">€ euro</a></li>
+                            <li><a href="#">$ dollar</a></li>
+                            <li><a href="#">¥ RMB</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section class="iniciar-sesion">
+                <h2 style="display: none;">iniciar sesión / registrarse</h2>
+                <a href="#" class="iniciar-sesion-a">sign in</a>
+                <span class="iniciar-sesion-span">/</span>
+                <a href="#" class="iniciar-sesion-a">register</a>
+            </section>
+            <section class="seccion-frase-web-header">
+                <h2 style="display: none;">frase web</h2>
+                <div class="frase-web-header">FREE express international delivery + EASY returns</div>
+            </section>
+            <nav class="iconos-redes-sociales">
+                <h2 style="display: none;">iconos redes sociales</h2>
+                <ul>
+                    <li><a href="#"><img src="static/img/facebookIcon.jpeg" alt="facebookIcon.jpeg"></a></li>
+                    <li><a href="#"><img src="static/img/twitterIcon.jpeg" alt="twitterIcon.jpeg"></a></li>
+                    <li><a href="#"><img src="static/img/instagramIcon.jpeg" alt="instagramIcon.jpeg"></a></li>
+                    <li><a href="#"><img src="static/img/pinterestIcon.jpeg" alt="pinterestIcon.jpeg"></a></li>
+                    <li><a href="#"><img src="static/img/youtubeIcon.jpeg" alt="youtubeIcon.jpeg"></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="frase-web2-header">FREE express international delivery + EASY returns</div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: right; margin-right: 5%;">
+            <audio controls>
+                <source src="static/audio/audio.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+        </div>
+
+        <div class="linea-total-header"></div>
+
+        <div class="ekommart-logo" style="justify-content: center; 
+        width: auto; height: 100px; margin-top: -40px; transform: scale(0.15);">
+            <img src="static/img/ekommart_logo.png" alt="ekommart_logo.png">
+        </div>
+
+        <div class="segunda-linea-header">
+            <section class="llamanos">
+                <h2 style="display: none;">llámanos</h2>
+                <img src="static/img/headphoneIcon.jpeg" alt="headphoneIcon.jpeg">
+                <div>
+                    <div class="call-us">CALL US</div>
+                    <div class="num-telefono">+84 1800 33355</div>
+                </div>
+            </section>
+    
+            <h1>ekommart</h1>
+    
+            <section class="iconos-principales">
+                <h2 style="display: none;">iconos principales</h2>
+                <ul>
+                    <li><a href="#"><img src="static/img/searchIcon.jpeg" alt="searchIcon.jpeg"></a></li>
+                    <li><a href="#"><img src="static/img/userIcon.jpeg" alt="userIcon.jpeg"></a></li>
+                    <li>
+                        <a href="#">
+                            <img src="static/img/heartIcon.jpeg" alt="heartIcon.jpeg">
+                            <span>0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="static/img/basketIcon.jpeg" alt="basketIcon.jpeg">
+                            <span>0</span>
+                        </a>
+                    </li>
+                    <li><a href="#" class="coste-a"><div class="coste-div">$00.0</div></a></li>
+                </ul>   
+            </section>
+        </div>
+        
+        <div class="linea-total-header"></div>
+
+        <nav class="tercera-linea-header">
+            <h2 style="display: none;">navegación principal</h2>
+            <ul class="navegacion-principal-ul">
+                <li>
+                    <a href="#" class="nav-home">home</a>
+                    <ul>
+                        <li><a href="#">home1</a></li>
+                        <li><a href="#">home2</a></li>
+                        <li><a href="#">home3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="nav-shop">shop</a>
+                    <ul>
+                        <li><a href="#">shop1</a></li>
+                        <li><a href="#">shop2</a></li>
+                        <li><a href="#">shop3</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#" class="nav-page">page</a>
+                    <ul>
+                        <li><a href="#">page1</a></li>
+                        <li><a href="#">page2</a></li>
+                        <li><a href="#">page3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">shortcode</a></li>
+                <li><a href="#">on sale</a></li>
+                <li><a href="#">contact</a></li>  
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="enlaces-principal">
+            <h2 style="display: none;">enlaces principal</h2>
+            <ul class="ul-principal-enlaces-principal">
+                <li class="articulo1-enlaces-principal">
+                    <a href="#">
+                        <article>
+                            <img src="static/img/newestArrivals.jpeg" alt="newestArrivals.jpeg">
+                            <div class="div-articulo1-enlaces-principal">
+                                <div>latest trends</div>
+                                <h3>season's</h3>
+                                <div>newest arrivals</div>
+                                <a href="#"><div>shop now</div></a>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <li class="articulo2-enlaces-principal">
+                    <a href="#">
+                        <article>
+                            <img src="static/img/realSimple.jpeg" alt="realSimple.jpeg">
+                            <div class="div-articulo2-enlaces-principal">
+                                <div>sunwashed pink</div>
+                                <h3>real simple</h3>
+                            </div>
+                        </article>
+                    </a>
+                </li>
+                <div>
+                    <li class="articulo3-enlaces-principal">
+                        <a href="#">
+                            <article>
+                                <img src="static/img/crochetBeadBracelet.jpeg" alt="crochetBeadBracelet.jpeg">
+                                <div class="div-articulo3-enlaces-principal">
+                                    <div>mixes crochet</div>
+                                    <h3>crochet bead bracelet</h3>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                    <li class="articulo4-enlaces-principal">
+                        <a href="#">
+                            <article>
+                                <img src="static/img/fruitBowlEarrrings.jpeg" alt="fruitBowlEarrrings.jpeg">
+                                <div class="div-articulo4-enlaces-principal">
+                                    <div class="div-new">new</div>
+                                    <h3>fruit bowl earrrings</h3>
+                                    <span>Titanium posts with disc clutch closures</span>
+                                    <div>shop now</div>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </section>
+
+        <div class="ir-arriba"><a href="#header-id">Ir Arriba<img src="static/img/irArriba.jpeg" alt="irArriba.jpeg"></a></div>
+
+        <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <video width="400" controls>
+                <source src="static/video/Proyecto.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/llVfVRB_0gg?si=3tABKHEMZGdLphts"
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+            </iframe>
+        </div>
+        
+        <section class="spring-musts-haves">
+            <img src="static/img/crown.jpeg" alt="crown.jpeg">
+            <h2>spring musts-haves</h2>
+            <span class="line1-picked-for-you"></span>
+            <div>picked for you</div>
+            <span class="line2-picked-for-you"></span>
+            <ul>
+                <li>
+                    <article class="art-produ1-spring">
+                        <div>
+                            <img src="static/img/prouct1.jpeg" alt="prouct1.jpeg">
+                            <div>new</div>
+                            <div>sale</div>
+                        </div>
+                        <div><img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg"></div>
+                        <div>running</div>
+                        <h3>fleece badge of sport graphic hoodir</h3>
+                        <div><span>$40.00</span><span>$0.00</span></div>
+                    </article>
+                </li>
+                <li>
+                    <article class="art-produ2-spring">
+                        <div>
+                            <img src="static/img/prouct2.jpeg" alt="prouct2.jpeg">
+                            <div>new</div>
+                        </div>
+                        <div><img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg"></div>
+                        <div>outerwear</div>
+                        <h3>man's rugged workwear graphic hoodie</h3>
+                        <div><span>$59.99</span><span>$0.00</span></div>
+                    </article>
+                </li>
+                <li>
+                    <article class="art-produ3-spring">
+                        <div>
+                            <img src="static/img/prouct3.jpeg" alt="prouct3.jpeg">
+                            <div>sale</div>
+                        </div>
+                        <div><img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg"></div>
+                        <div>sweatshirt</div>
+                        <h3>man's rain defender rockland sherpa-lined</h3>
+                        <div><span>$40.00</span><span>$350.99</span></div>
+                    </article>   
+                </li>
+                <li>
+                    <article class="art-produ4-spring">
+                        <div>
+                            <img src="static/img/prouct4.jpeg" alt="prouct4.jpeg">
+                        </div>
+                        <div><img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg"></div>
+                        <div>running</div>
+                        <h3>men's sportswear 2019 hooded windrunner jacket</h3>
+                        <div><span>$40.00</span><span>$0.00</span></div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <div class="linea-entre-section"></div>
+
+        <section class="popular-items">
+            <h2>the most popular items</h2>
+            <div class="secciones-popular-items">
+                <ul>
+                    <li><a href="#" class="filtro-enlace" data-filtro="footwear">footwear</a></li>
+                    <li><a href="#" class="filtro-enlace" data-filtro="appear">appear</a></li>
+                    <li><a href="#" class="filtro-enlace" data-filtro="outdoor">outdoor</a></li>
+                    <li><a href="#" class="filtro-enlace" data-filtro="accessories">accessories</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="articulos-popular-items">
+                    <li class="footwear-item">
+                        <article>
+                            <img src="static/img/prouct5.jpeg" alt="prouct5.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>running</div>
+                            <h3>fleece badge of sport graphic hoodir</h3>
+                            <div><span>$40.00</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="footwear-item">
+                        <article>
+                            <img src="static/img/prouct6.jpeg" alt="prouct6.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>outerwear</div>
+                            <h3>man's rugged workwear graphic hoodie</h3>
+                            <div><span>$59.99</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="footwear-item">
+                        <article>
+                            <img src="static/img/prouct7.jpeg" alt="prouct7.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>sweatshirt</div>
+                            <h3>man's rain defender rockland sherpa-lined</h3>
+                            <div><span>$40.00</span><span>$350.99</span></div>
+                        </article>   
+                    </li>
+
+                    <li class="appear-item">
+                        <article>
+                            <img src="static/img/prouct8.jpeg" alt="prouct8.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>running</div>
+                            <h3>fleece badge of sport graphic hoodir</h3>
+                            <div><span>$40.00</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="appear-item">
+                        <article>
+                            <img src="static/img/prouct1.jpeg" alt="prouct1.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>outerwear</div>
+                            <h3>man's rugged workwear graphic hoodie</h3>
+                            <div><span>$59.99</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="appear-item">
+                        <article>
+                            <img src="static/img/prouct2.jpeg" alt="prouct2.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>sweatshirt</div>
+                            <h3>man's rain defender rockland sherpa-lined</h3>
+                            <div><span>$40.00</span><span>$350.99</span></div>
+                        </article>   
+                    </li>
+
+                    <li class="outdoor-item">
+                        <article>
+                            <img src="static/img/prouct3.jpeg" alt="prouct3.jpg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>running</div>
+                            <h3>fleece badge of sport graphic hoodir</h3>
+                            <div><span>$40.00</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="outdoor-item">
+                        <article>
+                            <img src="static/img/prouct4.jpeg" alt="prouct4.jpg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>outerwear</div>
+                            <h3>man's rugged workwear graphic hoodie</h3>
+                            <div><span>$59.99</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="outdoor-item">
+                        <article>
+                            <img src="static/img/prouct5.jpeg" alt="prouct5.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>sweatshirt</div>
+                            <h3>man's rain defender rockland sherpa-lined</h3>
+                            <div><span>$40.00</span><span>$350.99</span></div>
+                        </article>   
+                    </li>
+
+                    <li class="accessories-item">
+                        <article>
+                            <img src="static/img/prouct8.jpeg" alt="prouct8.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>running</div>
+                            <h3>fleece badge of sport graphic hoodir</h3>
+                            <div><span>$40.00</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="accessories-item">
+                        <article>
+                            <img src="static/img/prouct7.jpeg" alt="prouct7.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>outerwear</div>
+                            <h3>man's rugged workwear graphic hoodie</h3>
+                            <div><span>$59.99</span><span>$0.00</span></div>
+                        </article>
+                    </li>
+                    <li class="accessories-item">
+                        <article>
+                            <img src="static/img/prouct6.jpeg" alt="prouct6.jpeg">
+                            <img class="valora-estrella" src="static/img/4estrellas.jpeg" alt="4estrellas.jpeg">
+                            <div>sweatshirt</div>
+                            <h3>man's rain defender rockland sherpa-lined</h3>
+                            <div><span>$40.00</span><span class="">$350.99</span></div>
+                        </article>   
+                    </li>
+                    <li class="enlace-accesory-pick">
+                        <a class="a-accesory-pick" href="#">
+                            <article class="accesory-pick">
+                                <img src="static/img/half-moonEarrings.jpeg" alt="half-moonEarrings.jpeg">
+                                <div>
+                                    <h3>accesory pick</h3>
+                                    <div>The half-moon Earrings</div>
+                                    <div>from $320</div>
+                                </div>
+                            </article>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="linea-popular-items"></div>
+        </section>
+        
+        <section class="otros-enlaces">    
+            <h2 style="display: none;">otros enlaces</h2>
+            <ul class="ul-otros-enlaces">
+                <li>
+                    <a href="#">
+                        <article class="fashion">
+                            <img src="static/img/whereCustomDesignComeToLife.jpeg" alt="whereCustomDesignComeToLife.jpeg">
+                            <div>
+                                <div>fashion</div>
+                                <h3>where custom design come to life!</h3>
+                                <div>shop now</div>
+                            </div>
+                        </article>
+                    </a> 
+                </li>
+                <li>
+                    <a href="#">
+                        <article class="bracelets">
+                            <img src="static/img/bracelets.jpeg" alt="bracelets.jpeg">
+                            <div>
+                                <div>20% off</div>
+                                <h3>bracelets</h3>
+                            </div>
+                        </article>
+                    </a> 
+                </li>
+                <li>
+                    <a href="#">
+                        <article class="jewelry">
+                            <img src="static/img/sets&more.jpeg" alt="sets&more.jpeg">
+                            <div>
+                                <h3>jewelry</h3>
+                                <div>sets & more</div> 
+                            </div>
+                        </article>
+                    </a> 
+                </li>
+            </ul>
+        </section>
+
+        <div class="linea5-main">
+            <section class="top-stories">
+                <h2>top stories</h2>
+                <article>
+                    <img src="static/img/topStories1.jpeg" alt="topStories1.jpeg">
+                    <div class="subtitulo-top-stories">Perfomance</div>
+                    <h3>Refining your website's user experience in 3 steps</h3>
+                    <div class="fecha-top-stories">28 Jun, 2019 · by Administrador</div>
+                    <div class="top-stories-line"></div>
+                </article>
+                <article>
+                    <img src="static/img/topStories2.jpeg" alt="topStories2.jpeg">
+                    <div class="subtitulo-top-stories">Media</div>
+                    <h3>Improving customer support with our Google Operations Centers</h3>
+                    <div class="fecha-top-stories">28 Jun, 2019 · by Administrador</div>
+                    <div class="top-stories-line"></div>
+                </article>
+                <article>
+                    <img src="static/img/topStories3.jpeg" alt="topStories3.jpeg">
+                    <div class="subtitulo-top-stories">Resource</div>
+                    <h3>Putting you in control: our work in privacy this year</h3>
+                    <div class="fecha-top-stories">28 Jun, 2019 · by Administrador</div>
+                    <div class="top-stories-line"></div>
+                </article>
+            </section>
+    
+            <section class="testimonials">
+                <h2 style="color: aquamarine;">testimonials</h2>
+                <ul>
+                    <li>
+                        <article>
+                            <div>"</div>
+                            <p>
+                                Create stunning images with as much or as little control as 
+                                you like thanks to a choise of Basic and Creative modes. 
+                            </p>
+                            <div>_</div>
+                            <h3>Sean Morrison</h3>
+                            <div>photographer</div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div>"</div>
+                            <p>Porro sit saepe laborum, quis, possimus illum autem.</p>
+                            <div>_</div>
+                            <h3>Lorem ipsum</h3>
+                            <div>photographer</div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <div>"</div>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                            <div>_</div>
+                            <h3>Laborum saepe</h3>
+                            <div>photographer</div>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <div class="contacto">
+                <section class="like-being-first">
+                    <h2>like being first?</h2>
+                    <div>
+                        What's inside: new arrivals, exclusive sales, event invites and more. 
+                        Then get your can't-miss style news, before everybody else.
+                    </div>
+                    <form action="#" method="post">
+                        <input type="email" name="email" id="email" placeholder="Your Email... ">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </section>
+                <div class="linea2-entre-section"></div>
+                <section class="contact-us">
+                    <h2>contact us</h2>
+                    <div>123 Rolfson Skyway Suite 456</div>
+                    <div>1 900 123 0456</div>
+                    <div style="color: aquamarine;">help@minymart.com</div>
+                </section>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="div-footer">
+            <img src="static/img/footer1.png" alt="footer1.png">
+            <div>
+                <nav>
+                    <h2 class="no-mostrar">navegación footer</h2>
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">shop</a></li>
+                        <li><a href="#">electronics</a></li>
+                        <li><a href="#">blog</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">pages</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-copyright">Copyright © 2020 <span style="color: aquamarine;">ekommart</span>. All Rights Reserved</div>
+                <svg height="120" width="500">
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" style="stop-color:#00FFDC;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#00A6FF;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+                    <text fill="#ffffff" font-size="45" font-family="Verdana" x="65" y="85">XQ</text>
+                    Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            <img src="static/img/footer2.png" alt="footer2.png">
+        </div>
+    </footer>
+</body>
+<script>
+    // Obtener una NodeList de todos los elementos con la clase "filtro-enlace"
+    let enlacesFiltro = document.querySelectorAll('.filtro-enlace');
+
+    // Agregar un EventListener a cada enlace de filtro
+    enlacesFiltro.forEach(function(enlace) {
+      enlace.addEventListener("click", function(event) {
+        // Evita el comportamiento predeterminado del hipervínculo por si acaso
+        event.preventDefault();
+
+        // Obtener el valor del atributo de datos "filtro"
+        let filtro = enlace.getAttribute('data-filtro');
+
+        // Motrar el elemento accesorio y luego solo los elementos con la clase correspondiente
+        document.querySelectorAll('.articulos-popular-items li').forEach(function(item) {
+          if (item.classList.contains('enlace-accesory-pick') || item.classList.contains(filtro + '-item')) {
+            item.style.display = "list-item";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      });
+    });
+</script>
+</html>
