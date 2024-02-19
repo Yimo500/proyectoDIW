@@ -426,7 +426,7 @@ h1{
 
 .enlaces-principal {
     position: relative;
-    background-image: url('../img/fondoEnlacesPrincipal.jpeg');
+    background-image: url('../img/fondoEnlacesPrincipal.webp');
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -484,7 +484,7 @@ h1{
 }
 
 .div-new::before {
-    content: url('../img/iconoRayo.jpeg');
+    content: url('../img/iconoRayo.webp');
 }
 
 .div-new:hover{
